@@ -1,4 +1,4 @@
-package main
+package generic
 
 import "fmt"
 
@@ -9,15 +9,12 @@ type user struct {
 }
 
 type address struct {
-	ID       int64
+	ID       int
 	Province string
 	City     string
 }
 
-func GenericClass() {
-
-}
-func main() {
+func ClassCase() {
 	userMp := make(map[int64]user, 0)
 	userMp[1] = user{
 		Name: "nick",
@@ -53,7 +50,6 @@ func main() {
 	for _, data := range addList {
 		ch1 <- data
 	}
-
 }
 func mpToList[k comparable, T any](mp map[k]T) []T {
 	list := make([]T, len(mp))

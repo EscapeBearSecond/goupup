@@ -1,8 +1,8 @@
-package main
+package generic
 
 import "fmt"
 
-func main() {
+func FunctionCase() {
 	var a, b = 2, 3
 	var c, d float64 = 2.3, 1.1
 	// 编译器自动推算出类型

@@ -11,6 +11,7 @@ import (
 func main() {
 	//writeFile()
 	readFile()
+
 }
 
 func writeFile() {
