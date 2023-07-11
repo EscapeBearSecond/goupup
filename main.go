@@ -1,7 +1,10 @@
 package main
 
 import (
-	file "github.com/study/golang/File/case"
+	"context"
+	_sync "github.com/study/golang/sync"
+	"os"
+	"os/signal"
 )
 
 func main() {
@@ -39,5 +42,18 @@ func main() {
 	// file.RwSync()
 	// file.Readline1()
 	// file.Readline2()
-	file.Readline3()
+	// file.Readline3()
+
+	// atomic case
+	// _sync.AtomicCase()
+	// _sync.AtomicCase1()
+	_sync.MapCase()
+
+	// context control goroutine exit case
+	// _case.ContextCase()
+	// _case.ContextCase2()
+
+	ctx, cancel := signal.NotifyContext(context.Background(), os.Interrupt, os.Kill)
+	defer cancel()
+	<-ctx.Done()
 }
