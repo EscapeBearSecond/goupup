@@ -23,6 +23,7 @@ func main() {
 	}
 	end := time.Now().UnixMilli()
 	fmt.Println("时间:", end-start)
+
 }
 func merge(ins ...<-chan string) <-chan string {
 	var wg sync.WaitGroup
