@@ -8,8 +8,8 @@ import (
 )
 
 func main() {
-	// generic.FunctionCase()
-	// generic.ClassCase()
+//	 generic.FunctionCase()
+//	 generic.ClassCase()
 	// generic.InterfaceCase()
 	// Library.EncodingCase()
 	// Library.ErrorsCase()
@@ -47,8 +47,11 @@ func main() {
 	// atomic case
 	// _sync.AtomicCase()
 	// _sync.AtomicCase1()
-	_sync.MapCase()
-
+	// _sync.MapCase()
+	// pool.PoolCase()
+	// pool.OnceCase()
+	// _sync.CondCase()
+	_sync.CondQueueCase()
 	// context control goroutine exit case
 	// _case.ContextCase()
 	// _case.ContextCase2()
